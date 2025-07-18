@@ -8,7 +8,7 @@ async function handleFetch(req: Request, env: Env, ctx: ExecutionContext) {
 async function scheduled(event: ScheduledController, env: Env, ctx: ExecutionContext) {
   ctx.waitUntil((async () => {
     const msg = await asyncCardsJson(env)
-    console.log('[scheduled] ' + msg)
+    console.log('[scheduled] ' , msg)
   })())
 }
 

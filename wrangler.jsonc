@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "bangumi-mikan",
+	"name": "mltd-api",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-06-27",
 	"observability": {
@@ -27,7 +27,7 @@
     }
   ],
   "triggers": {
-    "crons": ["33 16 1 * *"]
+    "crons": ["33 3 * * mon"]
   }
 
 	/**
